@@ -9,6 +9,6 @@ app.use(bodyParser.json());
 app.use(cors);
 
 //listen
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server started at 3000 ... ");
 });
